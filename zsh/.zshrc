@@ -10,6 +10,10 @@ plugins=(
     git
 )
 
+# Fix oh-my-zsh warning at shell start-up
+# "Insecure completion-dependent directories detected"
+ZSH_DISABLE_COMPFIX="true"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
