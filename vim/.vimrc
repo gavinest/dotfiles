@@ -95,5 +95,9 @@ set expandtab
 
 call plug#begin()
 Plug 'preservim/nerdtree'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
+" enable markdown syntax in vimwiki and other necessary vim settings
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+filetype plugin on
