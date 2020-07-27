@@ -86,6 +86,9 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " the same indent as the line you're currently on. Useful for READMEs, etc.
 set autoindent
 
+" yank to clipboard
+set clipboard=unnamed
+
 " show existing tab with 4 spaces width
 set tabstop=4
 " when indenting with '>', use 4 spaces width
