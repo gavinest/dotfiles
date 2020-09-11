@@ -99,6 +99,9 @@ set expandtab
 call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
+Plug 'junegunn/fzf.vim'
+Plug 'BurntSushi/ripgrep'
+Plug 'ihsanturk/neuron.vim'
 call plug#end()
 
 " enable markdown syntax in vimwiki and other necessary vim settings
