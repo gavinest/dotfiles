@@ -32,6 +32,7 @@ source $ZSH/oh-my-zsh.sh
 
 # activate pyenv for python virtual environments
 #export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -39,12 +40,12 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # activate jenv for java version management
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
 # ensure that JAVA_HOME is correct
-jenv enable-plugin export
+# jenv enable-plugin export
 # make Maven aware of the Java version in use (and switch when your project does)
-jenv enable-plugin maven
+# jenv enable-plugin maven
 
 # set path for Go install
 export GOPATH="$HOME/go"
@@ -59,3 +60,10 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 # export python version for google cloud sdk to use
 export CLOUDSDK_PYTHON="$HOME/.pyenv/shims/python"
 if [ -e /Users/estenssg/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/estenssg/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Android devlopment
+export PATH="$HOME/Library/Android/sdk/platform-tools/:$PATH"

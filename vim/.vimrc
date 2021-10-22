@@ -90,7 +90,7 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 set autoindent
 
 " yank to clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " show existing tab with 4 spaces width
 set tabstop=4
