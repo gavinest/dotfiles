@@ -2,9 +2,9 @@
 
 ## dotfiles management
 
-[GNU stow](https://www.gnu.org/software/stow/)
+I use [Chezmoi](https://www.chezmoi.io/) to manage my dotfiles. Check out the [blog post](https://estenssorog.com/posts/easy-dotfile-management-with-chezmoi/) I wrote about it.
 
-## vim 
+## vim
 
 vim plugin manager: [vim-plug](https://github.com/junegunn/vim-plug)
 

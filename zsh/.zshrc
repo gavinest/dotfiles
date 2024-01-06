@@ -59,11 +59,8 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 # export python version for google cloud sdk to use
 export CLOUDSDK_PYTHON="$HOME/.pyenv/shims/python"
-if [ -e /Users/estenssg/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/estenssg/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e ${HOME}/.nix-profile/etc/profile.d/nix.sh ]; then . ${HOME}/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Android devlopment
-export PATH="$HOME/Library/Android/sdk/platform-tools/:$PATH"
