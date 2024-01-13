@@ -1,3 +1,3 @@
 # install script for vscode devcontainer
 
-sh -c "$(curl -iv chezmoi.io/get)" -- init --apply
+sh -c "$(curl -iv get.chezmoi.io)" -- init --apply gavinest
