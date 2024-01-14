@@ -16,4 +16,6 @@ zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH
 zsh -c "$(curl -fsSL get.chezmoi.io)" -- init --apply gavinest
 
 # install vim plugins
-vim -c "PlugInstall" -c "q" -c "q"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim -c --not-a-term "PlugInstall" -c "q" -c "q"
