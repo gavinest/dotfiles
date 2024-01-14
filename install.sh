@@ -17,9 +17,6 @@ sh -c "$(curl -ivL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tool
 zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
 zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
 
-# # set zsh as default shell
-# chsh -s $(which zsh)
-
 # install chezmoi and apply dotfiles
 zsh -c "$(curl -fsSL get.chezmoi.io)" -- init --apply gavinest
 
