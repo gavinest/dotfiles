@@ -25,9 +25,9 @@ Managed with [vim-plug](https://github.com/junegunn/vim-plug)
 **Common vim-plug commands**
 
 ```vim
-<!-- install plugins -->
+" install plugins
 :PlugInstall
 
-<!-- remove plugins no longer in .vimrc -->
+" remove plugins no longer in .vimrc
 :PlugClean
 ```
