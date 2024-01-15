@@ -1,6 +1,6 @@
 # Dotfiles
 
-Managed with [chezmoi](https://www.chezmoi.io/). Check out the blog [post](https://estenssorog.com/posts/easy-dotfile-management-with-chezmoi/) I wrote about it.
+Managed with [chezmoi](https://www.chezmoi.io/). Check out the blog [post](https://estenssorog.com/posts/easy-dotfiles-with-chezmoi/) I wrote about it.
 
 **Common chezmoi commands**
 
