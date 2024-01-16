@@ -1,6 +1,16 @@
-# aliases
+# git aliases
+alias gst="git status"
+alias ga="git add"
+alias gc="git commit -m"
+alias gcl="git log --pretty=oneline"
+alias gd="git diff"
+
+# gcloud aliases
 alias gce="gcloud composer environments"
 alias gbce="gcloud beta composer environments"
 alias gs="gsutil"
+
+# other
 alias tf="terraform"
+alias dc="docker-compose"
 
