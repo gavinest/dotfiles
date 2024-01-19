@@ -14,6 +14,7 @@ zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH
 
 # install dotfiles using chezmoi
 zsh -c "$(curl -fsSL get.chezmoi.io)" -- init --apply gavinest
+~/dotfiles/bin/chezmoi forget --force ~/.zshrc
 
 # install vim plugins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
