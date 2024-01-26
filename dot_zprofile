@@ -1,8 +1,9 @@
 # git aliases
 alias gst="git status"
 alias ga="git add"
-alias gc="git commit -m"
-alias gcl="git log --pretty=oneline"
+alias gc="git commit"
+alias gpo='git push origin $(git branch --show-current)'
+alias glp="git log --pretty=oneline"
 alias gd="git diff"
 
 # gcloud aliases
@@ -11,6 +12,7 @@ alias gbce="gcloud beta composer environments"
 alias gs="gsutil"
 
 # other
+alias cz="chezmoi"
 alias tf="terraform"
 alias dc="docker-compose"
 
