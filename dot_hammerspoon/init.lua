@@ -28,4 +28,10 @@ spoon.SpoonInstall.repos.ShiftIt = {
    desc = "ShiftIt spoon repository",
    branch = "master",
 }
-spoon.SpoonInstall:andUse("ShiftIt", { repo = "ShiftIt" })
+spoon.SpoonInstall:andUse(
+    "ShiftIt",
+    {
+        repo = "ShiftIt",
+        hotkeys = {},
+    }
+)
