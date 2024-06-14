@@ -13,16 +13,6 @@ spoon.SpoonInstall:andUse(
     }
 )
 
-spoon.SpoonInstall:andUse(
-    "PushToTalk",
-    {
-        start = true,
-        config = {
-          app_switcher = {["zoom.us"] = "push-to-talk"}
-        }
-    }
-)
-
 spoon.SpoonInstall.repos.ShiftIt = {
    url = "https://github.com/peterklijn/hammerspoon-shiftit",
    desc = "ShiftIt spoon repository",
