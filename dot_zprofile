@@ -2,7 +2,6 @@
 alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
-alias gpo='git push origin $(git branch --show-current)'
 alias glp="git log --pretty=oneline"
 alias gd="git diff"
 
