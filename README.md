@@ -1,6 +1,6 @@
 # Dotfiles
 
-Managed with [chezmoi](https://www.chezmoi.io/). Check out the blog [post](https://estenssorog.com/posts/easy-dotfiles-with-chezmoi/) I wrote about it.
+Managed with [chezmoi](https://www.chezmoi.io/). Check out this blog [post](https://estenssorog.com/posts/easy-dotfiles-with-chezmoi/).
 
 **Common chezmoi commands**
 
@@ -18,16 +18,56 @@ chezmoi apply
 chezmoi cd
 ```
 
-## Vim plugins
+## Setting up a new machine
 
-Managed with [vim-plug](https://github.com/junegunn/vim-plug)
+1. Install Oh-my-zsh and custom plugins
 
-**Common vim-plug commands**
+```
+# custom plugins
 
-```vim
-" install plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+```
+1. Install `chezmoi` using the dotfiles repo command
+
+- Github ssh key setup needed
+
+```
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
+```
+
+1. Use [vim-plug](https://github.com/junegunn/vim-plug) to install vim extensions
+
+```
+# install vimplug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# enter vim then run
 :PlugInstall
+```
 
-" remove plugins no longer in .vimrc
-:PlugClean
+1. Install Homebrew and then brew managed deps
+
+```
+# Brewfile
+asdf
+chezmoi
+hammerspoon
+tree
+jq
+ripgrep
+```
+
+1. global python setup
+
+```
+asdf plugin-add python
+
+asdf install python latest
+
+asdf global python $(asdf list python | sort -V | tail -n 1)
+
+pip install --upgrade pip && pip install ipython
 ```
