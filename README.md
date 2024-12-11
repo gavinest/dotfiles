@@ -20,7 +20,7 @@ chezmoi cd
 
 ## Setting up a new machine
 
-1. Install Oh-my-zsh and custom plugins
+1. Install [Oh-my-zsh](https://ohmyz.sh/#install) and custom plugins
 
 ```
 # custom plugins
@@ -29,9 +29,17 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
-1. Install `chezmoi` using the dotfiles repo command
 
-- Github ssh key setup needed
+1. Install [Homebrew](https://brew.sh/) and then brew managed deps
+
+```
+# save the file locally as Brewfile. https://github.com/gavinest/dotfiles/blob/main/Brewfile
+
+# install the dependencies
+brew bundle 
+```
+
+1. Install `chezmoi` using the dotfiles repo command
 
 ```
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
@@ -46,18 +54,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # enter vim then run
 :PlugInstall
-```
-
-1. Install Homebrew and then brew managed deps
-
-```
-# Brewfile
-asdf
-chezmoi
-hammerspoon
-tree
-jq
-ripgrep
 ```
 
 1. global python setup
