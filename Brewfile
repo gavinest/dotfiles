@@ -1,10 +1,12 @@
 # Install command-line tools
 brew "asdf"
 brew "chezmoi"
+brew "lua"
 brew "tree"
 brew "jq"
 brew "ripgrep"
 brew "pngpaste" # allows image paste with nvim Obsidian
+
 
 # Install GUI apps (Casks)
 cask "hammerspoon"
