@@ -1,7 +1,6 @@
 # Install command-line tools
 brew "asdf"
 brew "chezmoi"
-brew "lua"
 brew "tree"
 brew "jq"
 brew "ripgrep"
