@@ -33,7 +33,7 @@ spoon.SpoonInstall:andUse(
 spoon.SpoonInstall.repos.ZeroOffset = {
     url = "https://github.com/gavinest/ZeroOffset",
     desc = "ZeroOffset spoon repository",
-    branch = "master",
+    branch = "main",
 }
 spoon.SpoonInstall:andUse(
     "ZeroOffset",
