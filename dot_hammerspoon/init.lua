@@ -1,8 +1,12 @@
 -- https://www.hammerspoon.org/Spoons/
 
+-- require("hs.ipc") -- enable hs command line tool for local development
+
 shortcut_keys = { "ctrl", "alt" }
+hs.hotkey.bind(shortcut_keys, "r", function() hs.reload() end) -- reload config shortcut
 
 hs.loadSpoon("SpoonInstall")
+
 spoon.SpoonInstall:andUse(
     "Caffeine",
     {
@@ -36,5 +40,8 @@ spoon.SpoonInstall:andUse(
     {
         repo = "ZeroOffset",
         start = true,
+        hotkeys = {
+            toggle = {shortcut_keys, "z"}
+        },
     }
 )
