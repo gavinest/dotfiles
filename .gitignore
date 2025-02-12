@@ -1,2 +1,5 @@
 # vim plugins directory
 vim/.vim/plugged/
+
+# neovim lazy installer lock file
+lazy-lock.json
