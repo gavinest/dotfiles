@@ -2,4 +2,4 @@
 vim/.vim/plugged/
 
 # neovim lazy installer lock file
-lazy-lock.json
+dot_config/nvim/*.json
