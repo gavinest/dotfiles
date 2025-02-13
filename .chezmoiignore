@@ -1,4 +1,4 @@
 README.md
 install*.sh
 Brewfile
-lazy-lock.json
+dot_config/nvim/lazy-lock.json
