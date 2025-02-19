@@ -1,0 +1,8 @@
+README.md
+install*.sh
+Brewfile
+dot_config/nvim/*.json
+
+{{- if ne .chezmoi.os "darwin" }}
+dot_hammerspoon/
+{{- end }}
