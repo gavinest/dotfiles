@@ -8,4 +8,10 @@ dot_config/nvim/*.json
 
 {{- if ne .chezmoi.os "darwin" }}
 dot_hammerspoon/
+{{- else if ne .chezmoi.os "linux" }}
+dot_config/alacritty
+dot_config/i3
+dot_config/picom
+dot_config/polybar
+dot_config/rofi
 {{- end }}
