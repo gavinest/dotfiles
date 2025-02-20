@@ -30,18 +30,17 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# macOS settings
 {{- if eq .chezmoi.os "darwin" }}
+# macOS settings
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
-ASDF_PREFIX=$(brew --prefix asdf)
-{{- end }}
-
-
 if [ -d "$HOME/.asdf" ]; then
   export PATH="$HOME/.asdf/shims:$PATH"
-  . ${ASDF_PREFIX}/libexec/asdf.sh
+  . $(brew --prefix asdf)/libexec/asdf.sh
 fi
+{{- else if eq .chezmoi.os "linux" }}
+# linux settings
+{{- end }}
 
 # vim keybindings
 bindkey -v
