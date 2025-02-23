@@ -20,12 +20,16 @@ return {
     },
     templates = {
       folder = '~/workspace/notes/Templates',
+      date_format = "%Y-%m-%d",
+      -- A map for custom variables, the key should be the variable and the value a function
+      substitutions = {},
     },
     completion = {
       nvim_cmp = true, -- This enables nvim-cmp integration
       min_chars = 2,
     },
-    -- Optional, customize how note IDs are generated given an optional title.
+
+    -- Customize how note IDs are generated given an optional title.
     ---@param title string|?
     ---@return string
     note_id_func = function(title)
