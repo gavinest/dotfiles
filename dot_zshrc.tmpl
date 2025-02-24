@@ -40,6 +40,9 @@ if [ -d "$HOME/.asdf" ]; then
 fi
 {{- else if eq .chezmoi.os "linux" }}
 # linux settings
+if [ -d "$HOME/.asdf" ]; then
+  export PATH="$HOME/.asdf/shims:$PATH"
+fi
 {{- end }}
 
 # vim keybindings
