@@ -16,6 +16,8 @@ exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ${HOME}/.config/polybar/launch_polybar.sh
 exec_always feh --bg-scale ~/nice-blue-background.png
 bindsym $mod+space exec rofi -show combi
+exec --no-startup-id greenclip daemon>/dev/null
+bindsym Shift+$mod+v exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
