@@ -2,8 +2,10 @@ brew "asdf"
 brew "chezmoi"
 brew "tree"
 brew "jq"
-brew "ripgrep"
+brew "neovim"
 brew "pngpaste" # allows image paste with nvim Obsidian
+brew "ripgrep"
+brew "tldr"
 
 cask "hammerspoon"
 cask "iterm2"
