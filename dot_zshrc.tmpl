@@ -38,6 +38,11 @@ if [ -d "$HOME/.asdf" ]; then
   export PATH="$HOME/.asdf/shims:$PATH"
   . $(brew --prefix asdf)/libexec/asdf.sh
 fi
+
+if [ -d "/Applications/Cursor.app/Contents/Resources/app/bin/" ]; then
+    export PATH="${PATH}:/Applications/Cursor.app/Contents/Resources/app/bin/"
+fi
+
 {{- else if eq .chezmoi.os "linux" }}
 # linux settings
 if [ -d "$HOME/.asdf" ]; then
